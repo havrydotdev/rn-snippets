@@ -1,5 +1,7 @@
 # The essential collection of React ans Next Snippets
 
+![Example](https://github.com/gavrylenkoIvan/rn-snippets/blob/main/snippet.gif);
+
 ## Full Expansions
 
 ### fc :
