@@ -24,7 +24,7 @@
     },
     "Functional component": {
         "prefix": ["component", "functional-component", "fc"],
-        "body": ["export const ${1:ComponentName} = (): React.JSX.Element => {", "\treturn <div {...props}>${0:Content}</div>;", "};"],
+        "body": ["export const ${1:ComponentName} = (): React.JSX.Element => {", "\treturn <div>${0:Content}</div>;", "};"],
         "description": "Simple functional component",
         "scope": "typescriptreact"
     },
