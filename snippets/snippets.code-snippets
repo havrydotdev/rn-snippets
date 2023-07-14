@@ -5,7 +5,7 @@
         "description": "Use client directive",
         "scope": "typescriptreact,javascriptreact"
     },
-    "Functional component wit props": {
+    "Functional component with props": {
         "prefix": ["fcwp", "functional-component-w-props", "fcp"],
         "body": ["export const ${1:ComponentName} = (${2:Props}: ${3:PropsType}): React.JSX.Element => {", "\treturn <div {...props}>${0:Content}</div>;", "};"],
         "description": "Simple functional component",
@@ -18,8 +18,8 @@
         "scope": "typescriptreact"
     },
     "DetailedHTMLProps": {
-        "prefix": ["div-props", "divp"],
-        "body": ["export default interface ${1:PropsName}", "\textends DetailedHTMLProps<${2:ElementName}HTMLAttributes<HTML${3:ElementName}Element>,", "\tHTML{4:ElementName}Element> {", "}"],
+        "prefix": ["detail-props", "props"],
+        "body": ["export default interface ${1:PropsName}", "\textends DetailedHTMLProps<${2:ElementName}HTMLAttributes<HTML${3:ElementName}Element>,", "\tHTML${0:ElementName}Element> {", "}"],
         "description": "Element props that extends DetailedHTMLProps",
     },
     "Functional component": {
