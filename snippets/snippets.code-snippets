@@ -1,0 +1,31 @@
+{
+    "Use client": {
+        "prefix": ["client", "use-client", "uc"],
+        "body": ["\"use client\""],
+        "description": "Use client directive",
+        "scope": "typescriptreact,javascriptreact"
+    },
+    "Functional component wit props": {
+        "prefix": ["fcwp", "functional-component-w-props", "fcp"],
+        "body": ["export const ${1:ComponentName} = (${2:Props}: ${3:PropsType}): React.JSX.Element => {", "\treturn <div {...props}>${0:Content}</div>;", "};"],
+        "description": "Simple functional component",
+        "scope": "typescriptreact"
+    },
+    "Layout": {
+        "prefix": ["lt", "layout"],
+        "body": ["export default function ${1:LayoutName}({", "children,", "}: {", "\tchildren: React.ReactNode;", "}): JSX.Element {", "\treturn <div>${2:Content}</div>;", "}"],
+        "description": "Simple layout component",
+        "scope": "typescriptreact"
+    },
+    "DetailedHTMLProps": {
+        "prefix": ["div-props", "divp"],
+        "body": ["export default interface ${1:PropsName}", "\textends DetailedHTMLProps<${2:ElementName}HTMLAttributes<HTML${3:ElementName}Element>,", "\tHTML{4:ElementName}Element> {", "}"],
+        "description": "Element props that extends DetailedHTMLProps",
+    },
+    "Functional component": {
+        "prefix": ["component", "functional-component", "fc"],
+        "body": ["export const ${1:ComponentName} = (): React.JSX.Element => {", "\treturn <div {...props}>${0:Content}</div>;", "};"],
+        "description": "Simple functional component",
+        "scope": "typescriptreact"
+    },
+}
